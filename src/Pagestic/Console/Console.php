@@ -33,6 +33,7 @@ class Console extends Application
     {
         $commands = parent::getDefaultCommands();
         $commands[] = new \Pagestic\Command\AboutCommand();
+        $commands[] = new \Pagestic\Command\InitCommand();
         return $commands;
     }
 
