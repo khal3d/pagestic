@@ -1,0 +1,17 @@
+#!/usr/bin/env php
+<?php
+
+if ( PHP_SAPI !== 'cli' ) {
+    echo 'Warning: Pagestic should be invoked via the CLI version of PHP, not the '. PHP_SAPI .' SAPI'. PHP_EOL;
+}
+
+// Set to run indefinitely if needed
+set_time_limit(0);
+
+// Include the composer autoloader
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use Pagestic\Console\Console;
+
+$app = new Console('Pagestic', '@package_version@');
+$app->run();

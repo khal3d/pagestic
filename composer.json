@@ -1,0 +1,30 @@
+{
+    "name": "khal3d/pagestic",
+    "description": "Pagestic is a static site generator",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Khaled Attia",
+            "email": "khaled.attia@googlemail.com",
+            "homepage": "http://khal3e.com/"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/khal3d/pagestic/issues"
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/console": "2.6.*-dev"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-0": {
+            "": "src/"
+        }
+    },
+    "bin": [
+        "bin/pagestic"
+    ]
+}
