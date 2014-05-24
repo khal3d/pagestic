@@ -45,4 +45,15 @@ class Console extends Application
         return self::$logo . parent::getHelp();
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    protected function getDefaultHelperSet()
+    {
+        $helperSet = parent::getDefaultHelperSet();
+
+        $helperSet->set(new \Pagestic\Command\Helper\DialogHelper());
+
+        return $helperSet;
+    }
 }
